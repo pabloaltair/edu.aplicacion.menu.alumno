@@ -1,5 +1,5 @@
 package dto;
-import java.util.Date;
+import java.time.LocalDate;
 
 
 /**
@@ -12,12 +12,12 @@ public class AlumnoDto {
 	private String nombreAlumno;
 	private String apellidosAlumno;
 	private String dniAlumno;
-	private Date fechaNacimientoAlumno;
+	private LocalDate fechaNacimientoAlumno;
 	private String gmailAlumno;
-	private Byte telefonoAlumno;
+	private int telefonoAlumno;
 	
 	//CONSTRUCTOR
-	public AlumnoDto(String nombreAlumno, String apellidosAlumno, String dniAlumno, Date fechaNacimientoAlumno, String gmailAlumno, Byte telefonoAlumno) {
+	public AlumnoDto(String nombreAlumno, String apellidosAlumno, String dniAlumno, LocalDate fechaNacimientoAlumno, String gmailAlumno, int telefonoAlumno) {
 		this.nombreAlumno = nombreAlumno;
 		this.apellidosAlumno = apellidosAlumno;
 		this.dniAlumno = dniAlumno;
@@ -36,13 +36,13 @@ public class AlumnoDto {
 	public String getDniAlumno() {
 		return this.dniAlumno;
 	}
-	public Date geFechaNacimiento() {
+	public LocalDate geFechaNacimiento() {
 		return this.fechaNacimientoAlumno;
 	}
 	public String getGmailAlumno() {
 		return this.gmailAlumno;
 	}
-	public Byte getTelefonoAlumno() {
+	public int getTelefonoAlumno() {
 		return this.telefonoAlumno;
 	}
 	
@@ -56,13 +56,13 @@ public class AlumnoDto {
 	public void setDniAlumno(String dniAlumno) {
 		this.dniAlumno = dniAlumno;
 	}
-	public void setfechaNacimientoAlumno(Date fechaNacimientoAlumno) {
+	public void setfechaNacimientoAlumno(LocalDate fechaNacimientoAlumno) {
 		this.fechaNacimientoAlumno = fechaNacimientoAlumno;
 	}
 	public void setGmailAlumno(String gmailAlumno) {
 		this.gmailAlumno = gmailAlumno;
 	}
-	public void setTelefonoAlumno(Byte telefonoAlumno) {
+	public void setTelefonoAlumno(int telefonoAlumno) {
 		this.telefonoAlumno = telefonoAlumno;
 	}
 }

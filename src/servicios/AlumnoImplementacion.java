@@ -34,7 +34,7 @@ public class AlumnoImplementacion implements AlumnoInterfaz {
 		String gmailAlumno=scanner.next();
 
 		System.out.println("Telefono");
-		byte telefonoAlumno=scanner.nextByte();
+		int telefonoAlumno=scanner.nextInt();
 		
 		
 	}
