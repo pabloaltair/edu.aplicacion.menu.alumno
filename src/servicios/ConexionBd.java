@@ -9,7 +9,7 @@ public class ConexionBd {
 
     public static void main(String[] args) {
 
-        String url = "jdbc:mysql://localhost:5432/serveralumnodbs";
+        String url = "jdbc:postgresql://localhost:5432/serveralumnodbs";
 
         String usuario = "postgres";
 
