@@ -115,11 +115,12 @@ public class AlumnoImplementacion implements AlumnoInterfaz {
 	public void EliminarAlumno() {
 		System.out.println("=============ELIMINAR ALUMNO=============");
 		System.out.println("\u001B[1;31m ¿Esta Seguro de eliminar Alumno?\u001B[0m");
-		System.out.println("1. No, Volver al Menu Principal");
-		System.out.println("0. Si, Eliminar Alumno ");
+		System.out.println("0. No, Volver al Menu Principal");
+		System.out.println("1. Si, Eliminar Alumno ");
 		try {
 			//CONTROLADOR de acciones de los menu(permite seleccionar las opciones del menu)
 			byte control=scanner.nextByte();
+			
 			switch(control) {
 			case 0:
 				System.out.println("Eliminando alumno");
@@ -132,6 +133,7 @@ public class AlumnoImplementacion implements AlumnoInterfaz {
 		}catch (Exception e) {
 			
 		}
+		
 		
 			
 		
