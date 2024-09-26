@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Atributos del Alumno
  * @author prosdez
- * 25/09/2024
+ * 26/09/2024
 */
 public class AlumnoDto {
 	//ATRIBUTOS
@@ -53,16 +53,16 @@ public class AlumnoDto {
 	public void setApellidosAlumno(String apellidosAlumno) {
 		this.apellidosAlumno = apellidosAlumno;
 	}
-	public void setDniAlumno() {
+	public void setDniAlumno(String dniAlumno) {
 		this.dniAlumno = dniAlumno;
 	}
-	public void setfechaNacimientoAlumno() {
+	public void setfechaNacimientoAlumno(Date fechaNacimientoAlumno) {
 		this.fechaNacimientoAlumno = fechaNacimientoAlumno;
 	}
-	public void setGmailAlumno() {
+	public void setGmailAlumno(String gmailAlumno) {
 		this.gmailAlumno = gmailAlumno;
 	}
-	public void setTelefonoAlumno() {
+	public void setTelefonoAlumno(Byte telefonoAlumno) {
 		this.telefonoAlumno = telefonoAlumno;
 	}
 }
