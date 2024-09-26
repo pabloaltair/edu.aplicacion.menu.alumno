@@ -1,5 +1,6 @@
 package servicios;
 
+import java.security.PublicKey;
 import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -7,7 +8,7 @@ import java.sql.SQLException;
 
 public class ConexionBd {
 
-    public static void main(String[] args) {
+    public void EstablecerConexion() {
 
         String url = "jdbc:postgresql://localhost:5432/serveralumnodbs";
 
@@ -15,7 +16,7 @@ public class ConexionBd {
 
         String contraseña = "Contraseña1!";
 
-
+     
         try {
 
             // Cargar el controlador de la base de datos (opcional desde JDBC 4.0)

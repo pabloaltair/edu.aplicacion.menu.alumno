@@ -28,6 +28,9 @@ public class Main {
 		
 		byte control = 0;
 		
+		//CREAR Y ESTABLECER LA CONEXION
+		ConexionBd conexionBd=new ConexionBd();
+		conexionBd.EstablecerConexion();
 		do {
 			
 			control = mi.MostrarMenuYOpcion();
