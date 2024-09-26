@@ -1,18 +1,19 @@
 package servicios;
+import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
 
 /**
  * Metodos del Alumno
  * @author prosdez
- * 24/09/2024
+ * 25/09/2024
 */
 
 public class AlumnoImplementacion implements AlumnoInterfaz {
 	
-	//CREAR SCANNER QUE UTILIZAR TODOS LOS METODOS
+	//CREAR SCANNER que utilizara el resto de metodos
 	Scanner scanner=new Scanner(System.in);
 	
-	//CREACION DEL USUARIO INTRODUCIENDO PARAMETROS EN EL MISMO
+	//CREACION DEL USUARIO INTRODUCIENDO PARAMETROS A AÑADIR EN EL MISMO
 	public void CrearAlumno() {
 		System.out.println("==========DAR ALTA A ALUMNO==========");
 		System.out.println("Introduce los campos");
@@ -37,44 +38,70 @@ public class AlumnoImplementacion implements AlumnoInterfaz {
 		
 		
 	}
-
+	//MODIFICAR USUARIO INTRODUCIENDO DNI Y MODIFICAR DATOS EN EL MISMO
 	@Override
-	//MODIFICAR USUARIO INTRODUCIENDO LOS PARAMETROS A MOFICIAR EN EL MISMO
 	public void ModificarAlumno() {
-		// TODO Auto-generated method stub
 		
-		
-		
-		//MENU OPCIONES
+		//MENU Elegir Opcion a Modificar
 		try {
-			System.out.println("==========¿Que desea modificar?==========");
-			//Controlador de acciones del menu
-			byte control=scanner.nextByte();
-			switch(control) {
+			System.out.println("==========¿QUE DESEA MODIFICAR?==========");
+			System.out.println("1. Nombre ");
+			System.out.println("2. Apellidos ");
+			System.out.println("3. DNI ");
+			System.out.println("4. Fecha de Nacimiento ");
+			System.out.println("5. Gmail ");
+			System.out.println("6. Telefono ");
 			
-				case 0:
-					System.out.println("Cerrar Aplicacion");
+			
+			try {
+				//CONTROLADOR de acciones de los menu(permite seleccionar las opciones del menu)
+				byte control=scanner.nextByte();
+				
+				//MENU Parametro de Alumno a Cambiar
+				switch(control) {
+				
+					case 1:
+						
+						System.out.println("Inserte nuevo nombre");
+						
+						break;
+					case 2:
+						
+						System.out.println("Inserte nuevos Apellidos");
+						
+						break;
+						
+					case 3:
+						
+						System.out.println("Inserte nuevo DNI");
+						
+						break;
 					
+					case 4:
+						
+						System.out.println("Inserte nueva Fecha de Nacimiento");
+						
+						break;
 					
-					break;
-				case 1:
-					System.out.println("Se abrira el alta del nuevo alumno ");
+					case 5:
+						
+						System.out.println("Inserte nuevo Gmail");
+						
+						break;
 					
-					break;
-				case 2:
-					System.out.println("Se abrira la modificacion del alumno ");
-					
-					break;
-					
-				case 3:
-					System.out.println("Se abrira la eliminacion del alumno ");
-					
-					break;
-					
-				default:
-					
-					System.out.println("ERROR: Seleccione una opción valida");
-					break;
+					case 6:
+						
+						System.out.println("Inserte nuevo telefono");
+						
+						break;
+						
+					default:
+						
+						System.out.println("ERROR: Seleccione una opción valida");
+						break;
+				}
+				
+			} catch (Exception e) {
 			
 			}
 		}
@@ -84,9 +111,29 @@ public class AlumnoImplementacion implements AlumnoInterfaz {
 	}
 
 	@Override
-	//ELIMINAR USUARIO
+	//ELIMINAR USUARIO PIDIENDO DNI
 	public void EliminarAlumno() {
-		// TODO Auto-generated method stub
+		System.out.println("=============ELIMINAR ALUMNO=============");
+		System.out.println("\u001B[1;31m ¿Esta Seguro de eliminar Alumno?\u001B[0m");
+		System.out.println("1. No, Volver al Menu Principal");
+		System.out.println("0. Si, Eliminar Alumno ");
+		try {
+			//CONTROLADOR de acciones de los menu(permite seleccionar las opciones del menu)
+			byte control=scanner.nextByte();
+			switch(control) {
+			case 0:
+				System.out.println("Eliminando alumno");
+				break;
+			case 1:
+				System.out.println("Volviendo al Menu Principal");
+				break;
+			}
+			
+		}catch (Exception e) {
+			
+		}
+		
+			
 		
 	}
 }

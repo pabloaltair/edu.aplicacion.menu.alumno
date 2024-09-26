@@ -19,7 +19,7 @@ public class Main {
 	//COMIENZO CLASE METODO MAIN
 	public static void main(String[] args) {
 		
-		
+		//IMPLEMENTACION INTERFAZ
 		MenuInterfaz mi = new MenuImplementacion();
 		/**Crear boolean para abrir y cerrar menu */
 		boolean esCerrado = false;
@@ -33,6 +33,7 @@ public class Main {
 			
 			control = mi.MostrarMenuYOpcion();
 			AlumnoInterfaz alumnoInterfaz= new AlumnoImplementacion();
+			
 			try {
 				switch(control) {
 				

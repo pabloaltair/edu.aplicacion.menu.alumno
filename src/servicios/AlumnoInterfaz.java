@@ -15,7 +15,9 @@ public interface AlumnoInterfaz {
 	 * @author prosdez
 	 */
 	public void CrearAlumno();
+	
 	public void ModificarAlumno();
+	
 	public void EliminarAlumno();
 
 }

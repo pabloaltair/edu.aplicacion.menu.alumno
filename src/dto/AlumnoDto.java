@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Atributos del Alumno
  * @author prosdez
- * 23/09/2024
+ * 25/09/2024
 */
 public class AlumnoDto {
 	//ATRIBUTOS
@@ -24,7 +24,7 @@ public class AlumnoDto {
 		this.fechaNacimientoAlumno = fechaNacimientoAlumno;
 		this.gmailAlumno = gmailAlumno;
 		this.telefonoAlumno=telefonoAlumno;
-		}
+	}
 	
 	//GETTERS
 	public String getNombreAlumno() {
