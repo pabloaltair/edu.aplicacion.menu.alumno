@@ -9,7 +9,7 @@ public class ConexionBd {
 
     public static void main(String[] args) {
 
-        String url = "jdbc:mysql://localhost:3306/miBaseDeDatos";
+        String url = "jdbc:mysql://localhost:5432/serveralumnodbs";
 
         String usuario = "postgres";
 
@@ -20,7 +20,7 @@ public class ConexionBd {
 
             // Cargar el controlador de la base de datos (opcional desde JDBC 4.0)
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
 
 
             // Obtener la conexión usando DriverManager
