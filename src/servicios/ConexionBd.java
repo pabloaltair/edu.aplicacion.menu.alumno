@@ -11,9 +11,9 @@ public class ConexionBd {
 
         String url = "jdbc:mysql://localhost:3306/miBaseDeDatos";
 
-        String usuario = "root";
+        String usuario = "postgres";
 
-        String contraseña = "password";
+        String contraseña = "Contraseña1!";
 
 
         try {

@@ -1,7 +1,6 @@
 package controladores;
 import java.lang.ref.Cleaner;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import dto.AlumnoDto;
 import servicios.*;

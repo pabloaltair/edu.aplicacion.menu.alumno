@@ -1,5 +1,4 @@
 package servicios;
-import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
 
 /**
@@ -34,6 +33,7 @@ public class MenuImplementacion implements MenuInterfaz{
 		Scanner scanner = new Scanner(System.in);
 		byte control=scanner.nextByte();
 		return control;
+		
 	}
 	
 }
